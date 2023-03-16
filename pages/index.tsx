@@ -10,7 +10,7 @@ export default function Home() {
     let interaval = undefined;
 
     if (isTimeron) {
-      interaval = setInterval(() => setTime((prev) => prev + 10), 10);
+      interaval = setInterval(() => setTime((prev) => prev + 10), 100);
     } else if (!isTimeron) {
       clearInterval(interaval);
     }
